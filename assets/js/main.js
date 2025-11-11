@@ -34,6 +34,30 @@
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
+
+  // You would need to include Bootstrap Icons CSS for the icons to appear.
+// Example: <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+// And for the scroll-to-top button functionality:
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollTopButton = document.querySelector('.scroll-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) { // Show button after scrolling 100px
+            scrollTopButton.classList.add('active');
+        } else {
+            scrollTopButton.classList.remove('active');
+        }
+    });
+
+    scrollTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
   /**
    * Hide mobile nav on same-page/hash links
    */

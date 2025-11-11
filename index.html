@@ -36,7 +36,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png" alt=""> 
         <h1 class="sitename">@nt's Arena</h1>
         <span>.</span>
       </a>
@@ -66,16 +66,15 @@
     <!-- Beranda Section -->
     <section id="beranda" class="hero section light-background" style="background-image: url('assets/img/home.jpeg');">
       <div class="container">
-        <div class="row gy-4 justify-content-center justify-content-lg-start">
-          <div class="col-lg-6 d-flex flex-column justify-content-center text-start">
-            <h1 data-aos="fade-up">Raih Kemenangan di Setiap Pukulan!</h1>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#reservasi" class="btn-get-started">Reservasi Sekarang</a>
-            </div>
-          </div>
+        <div class="hero-content text-center">
+          <h1 data-aos="fade-up">Raih Kemenangan</h1>
+          <h1 data-aos="fade-up">di Setiap Pukulan!</h1>
+          <a href="#reservasi" class="btn-get-started" data-aos="fade-up" data-aos-delay="200">
+            Reservasi Sekarang
+          </a>
         </div>
       </div>
-    </section><!-- /Beranda Section -->
+    </section>
 
     <!-- Tentang Kami Section -->
     <section id="tentang" class="about section">
@@ -532,7 +531,7 @@
                         <span>Tempatnya bersih dan nyaman, recommended banget!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Pengguna 1</h3>
+                      <h3>angel</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
@@ -555,14 +554,14 @@
                         <span>Fasilitas lengkap dan pencahayaan sangat bagus.</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Pengguna 2</h3>
+                      <h3>uayu</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials-2.jpeg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -578,14 +577,14 @@
                         <span>Pelayanan ramah dan suasana bermain menyenangkan!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Pengguna 3</h3>
+                      <h3>nayul</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials-3.png" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -602,58 +601,49 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>FAQ</h2>
-        <p><span>Yang</span> <span class="description-title">Sering Ditanyakan<br></span></p>
-      </div><!-- End Section Title -->
+        <p><span>Pertanyaan</span> <span class="description-title">yang Sering Diajukan<br></span></p>
+      </div><div class="container">
 
-      <div class="container">
+      <div class="accordion" id="faqAccordion">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Apakah bisa membawa raket sendiri?</h4>
-                <p>Ya, pengunjung boleh membawa raket dan shuttlecock sendiri.</p>
-              </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <span class="faq-icon">Q:</span> Bagaimana cara membatalkan pemesanan?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Untuk membatalkan pemesanan, Anda bisa menghubungi layanan pelanggan kami melalui telepon atau email. Pembatalan harus dilakukan minimal 24 jam sebelum waktu reservasi.
             </div>
-          </div><!-- End Pertanyaan 1-->
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Apakah tersedia tempat parkir?</h4>
-                <p>Tersedia area parkir luas untuk motor dan mobil.</p>
-              </div>
+          </div>
+        </div><div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span class="faq-icon">Q:</span> Apakah ada biaya layanan?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Tidak, kami tidak membebankan biaya layanan tambahan untuk setiap pemesanan. Harga yang tertera adalah harga final.
             </div>
-          </div><!-- End Pertanyaan 2-->
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Bagaimana cara reservasi?</h4>
-                <p>Silakan isi form reservasi di bawah</p>
-              </div>
+          </div>
+        </div><div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <span class="faq-icon">Q:</span> Metode pembayaran apa yang diterima?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Kami menerima berbagai metode pembayaran, termasuk transfer bank, kartu kredit/debit, dan dompet digital (OVO, GoPay, DANA).
             </div>
-          </div><!-- End Pertanyaan 3-->
+          </div>
+        </div></div></div>
 
-        </div>
-
-      </div>
-
-    </section><!-- /FAQ Section -->
-
+    </section>
     <!-- Reservasi Section -->
     <section id="reservasi" class="book-a-table section">
 
@@ -770,43 +760,6 @@
           </div><!-- End Info Item -->
 
         </div>
-
-        <form action="forms/kontak.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="nama" class="form-control" placeholder="Nama Anda" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Email Anda" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="pesan" rows="6" placeholder="Pesan" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Pesan anda berhasil terkirim. Terima Kasih!</div>
-
-              <button type="submit">Kirim Pesan</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
   <!-- footer -->
   <footer id="footer" class="footer dark-background">
 
@@ -860,10 +813,6 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>2025</span> <strong class="px-1 sitename">@nt's Arena</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>

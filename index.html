@@ -1,246 +1,892 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@nt's Arena - Lapangan Bulutangkis</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ===== NAVBAR ===== -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="https://via.placeholder.com/60" alt="Logo Kok" />
-          <h1>@nt's Arena</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#price">Price</a></li>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>@nt's Arena - Lapangan Bulutangkis</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">@nt's Arena</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#beranda" class="active">Beranda<br></a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#harga">Harga</a></li>
           <li><a href="#jadwal">Jadwal</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    </header>
 
-    <!-- ===== HOME / HERO SECTION ===== -->
-    <section
-      id="home"
-      class="hero"
-      style="
-        background: url('img/home.jpeg') center/cover no-repeat;
-        height: 100vh;
-      "
-    >
-      <div class="hero-content">
-        <h2>"Raih Kemenangan di Setiap Pukulan!"</h2>
-        <a href="#contact" class="btn">Reservasi Sekarang</a>
-      </div>
-    </section>
+      <a class="btn-getstarted" href="index.html#reservasi">Reservasi</a>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="about">
-      <h2>Tentang Kami</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            <strong>@nt's Arena</strong> berdiri pada Juli 2025 dan dikelola
-            oleh <strong>Ariyanto</strong>. Kami memiliki tujuan untuk mendorong
-            semangat olahraga dan membangun komunitas bulutangkis yang aktif.
-            Kebersihan terjamin dan fasilitas kami lengkap untuk kenyamanan
-            bermain Anda.
-          </p>
-        </div>
-        <div class="about-photo">
-          <img
-            src="https://via.placeholder.com/500x300"
-            alt="Suasana Latihan"
-          />
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Beranda Section -->
+    <section id="beranda" class="hero section light-background" style="background-image: url('assets/img/home.jpeg');">
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-start">
+          <div class="col-lg-6 d-flex flex-column justify-content-center text-start">
+            <h1 data-aos="fade-up">Raih Kemenangan di Setiap Pukulan!</h1>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#reservasi" class="btn-get-started">Reservasi Sekarang</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section><!-- /Beranda Section -->
 
-    <!-- ===== FASILITAS SECTION ===== -->
-    <section id="fasilitas" class="fasilitas">
-      <h2>Fasilitas Kami</h2>
-      <div class="fasilitas-grid">
-        <div class="fasilitas-item">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Pencahayaan LED"
-          />
-          <h3>Pencahayaan LED</h3>
-          <p>Pencahayaan terang dan merata untuk permainan maksimal.</p>
-        </div>
-        <div class="fasilitas-item">
-          <img src="https://via.placeholder.com/300x200" alt="Kantin" />
-          <h3>Kantin</h3>
-          <p>
-            Menyediakan makanan dan minuman ringan untuk pemain dan penonton.
-          </p>
-        </div>
-        <div class="fasilitas-item">
-          <img src="https://via.placeholder.com/300x200" alt="Mushola" />
-          <h3>Mushola</h3>
-          <p>Tersedia tempat ibadah yang bersih dan nyaman.</p>
-        </div>
-        <div class="fasilitas-item">
-          <img src="https://via.placeholder.com/300x200" alt="AC (Menyusul)" />
-          <h3>AC (Menyusul)</h3>
-          <p>Fasilitas pendingin udara segera hadir untuk kenyamanan lebih.</p>
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tentang Kami<br></h2>
+        <p><span>Pelajari Lebih</span> <span class="description-title">Tentang Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="">
+          </div>
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5" style="width:100%; text-align:left; line-height:1.8;">
+              <div style="margin:auto 0;">
+                <p class="fst-italic">
+                  <strong>@nt's Arena</strong> berdiri pada Juli 2025 dan dikelola
+                  oleh <strong>Ariyanto</strong>. Kami memiliki tujuan untuk mendorong
+                  semangat olahraga dan membangun komunitas bulutangkis yang aktif.
+                  Kebersihan terjamin dan fasilitas kami lengkap untuk kenyamanan
+                  bermain Anda.
+                </p>
+                <p class="fst-italic">
+                  Dengan dukungan fasilitas lengkap 
+                  seperti lapangan berkualitas, area istirahat yang nyaman, serta layanan 
+                  pemesanan jadwal yang mudah, kami siap menjadi tempat terbaik bagi Anda 
+                  untuk berlatih, bersaing, dan menikmati permainan bulutangkis setiap hari.
+                </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- ===== GALLERY SECTION ===== -->
-    <section id="gallery" class="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="https://via.placeholder.com/250x200" alt="Foto 1" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 2" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 3" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 4" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 5" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 6" />
-        <img src="https://via.placeholder.com/250x200" alt="Foto 7" />
-      </div>
-    </section>
+    </section><!-- /About Section -->
 
-    <!-- ===== PRICE SECTION ===== -->
-    <section id="price" class="price">
-      <h2>Paket Harga</h2>
-      <div class="price-container">
-        <div class="price-card">
-          <h3>Sewa Per Jam</h3>
-          <p>Rp 50.000 / jam</p>
-          <p>Minimal sewa 3 jam</p>
-          <a href="#contact" class="btn">Pesan Sekarang</a>
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Kenapa Pilih @nt's Arena</h3>
+                <p>
+                @nt's Arena adalah pilihan terbaik untuk Anda yang ingin menyewa lapangan badminton di Samarinda.
+                Kami menyediakan lapangan berkualitas tinggi dengan lantai berstandar turnamen, pencahayaan optimal,
+                serta suasana nyaman untuk latihan maupun pertandingan.
+                </p>
+                <p>
+                Dengan sistem pemesanan yang mudah dan harga sewa yang terjangkau, 
+                Anda dapat bermain kapan saja tanpa khawatir kehabisan jadwal. 
+                Kami juga menyediakan area istirahat dan fasilitas lengkap untuk mendukung pengalaman bermain Anda.
+                </p>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4 class="fw-bold">Lapangan Standar Turnamen</h4>
+                  <p>Permukaan lapangan berkualitas tinggi dengan pencahayaan yang dirancang agar nyaman di mata dan cocok untuk pertandingan profesional.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4 class="fw-bold">Pemesanan Online Mudah</h4>
+                  <p>Booking jadwal bermain Anda secara online kapan pun dan di mana pun tanpa perlu antre. 
+                    Jadwalkan permainan dengan cepat dan praktis.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4 class="fw-bold">Harga & Fasilitas</h4>
+                  <p>Nikmati tarif sewa bersahabat dengan fasilitas memadai seperti kantin, mushola, dan pencahayaan LED untuk mendukung kenyamanan Anda bermain.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
         </div>
-        <div class="price-card">
-          <h3>Paket Bulanan</h3>
-          <p>Rp 350.000 / bulan</p>
-          <p>4 kali main, masing-masing 3 jam</p>
-          <a href="#contact" class="btn">Pesan Sekarang</a>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center text-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Klien</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total Jam Reservasi</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Pegawai</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="events section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Fasilitas</h2>
+        <p><span>Cek</span> <span class="description-title">Fasilitas</span> <span>Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+              <h3>Pencahayaan LED</h3>
+              <p class="description">
+                Pencahayaan terang dan merata untuk permainan maksimal.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
+              <h3>Kantin</h3>
+              <p class="description">
+                Menyediakan makanan dan minuman ringan untuk pemain dan penonton.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
+              <h3>Mushola</h3>
+              <p class="description">
+                Tersedia tempat ibadah yang bersih dan nyaman.
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
+              <h3>AC (Menyusul)</h3>
+              <p class="description">
+                Fasilitas pendingin udara segera hadir untuk kenyamanan lebih.
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="gallery section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galeri</h2>
+        <p><span>Cek</span> <span class="description-title">Galeri</span> <span>Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Harga Section -->
+    <section id="harga" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Harga</h2>
+        <p><span>Cek</span> <span class="description-title">Paket Harga</span> <span>Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Sewa Per Jam</h4>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Sewa Bulanan</h4>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- SEWA PER JAM -->
+          <div class="tab-pane fade active show" id="menu-starters">
+            <div class="row gy-5 justify-content-center">
+
+              <div class="col-lg-4 menu-item text-center">
+                <a href="assets/img/menu/lapangan1.jpg" class="glightbox">
+                  <img src="assets/img/menu/lapangan1.jpg" class="menu-img img-fluid" alt="">
+                </a>
+                <h4>Sewa Lapangan Per Jam</h4>
+                <p class="ingredients">
+                  Minimal Sewa 3 Jam
+                </p>
+                <p class="price">
+                  Rp 50.000 / jam
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- SEWA BULANAN -->
+          <div class="tab-pane fade" id="menu-breakfast">
+            <div class="row gy-5 justify-content-center">
+
+              <div class="col-lg-4 menu-item text-center">
+                <a href="assets/img/menu/lapangan2.jpg" class="glightbox">
+                  <img src="assets/img/menu/lapangan2.jpg" class="menu-img img-fluid" alt="">
+                </a>
+                <h4>Paket Sewa Bulanan</h4>
+                <p class="ingredients">
+                  4x main per bulan (3 jam/sesi)
+                </p>
+                <p class="price">
+                  Rp 350.000 / bulan
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Reservasi -->
+        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="#reservasi" 
+            style="
+              display: inline-block;
+              color: #fff;
+              background: #e00000;
+              padding: 12px 40px;
+              border-radius: 50px;
+              font-weight: 600;
+              text-decoration: none;
+              transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+              box-shadow: 0 4px 15px rgba(224, 0, 0, 0.3);
+            "
+            onmouseover="this.style.background='#c40000'; this.style.transform='scale(1.05)'"
+            onmouseout="this.style.background='#e00000'; this.style.transform='scale(1)'">
+            Reservasi Sekarang
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ===== JADWAL SECTION ===== -->
-    <section id="jadwal" class="jadwal">
-      <h2>Jadwal Operasional</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Jam</th>
-            <th>Senin</th>
-            <th>Selasa</th>
-            <th>Rabu</th>
-            <th>Kamis</th>
-            <th>Jumat</th>
-            <th>Sabtu</th>
-            <th>Minggu</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>08.00 - 11.00</td>
-            <td colspan="7">Tersedia</td>
-          </tr>
-          <tr>
-            <td>11.00 - 14.00</td>
-            <td colspan="7">Tersedia</td>
-          </tr>
-          <tr>
-            <td>14.00 - 17.00</td>
-            <td colspan="7">Tersedia</td>
-          </tr>
-          <tr>
-            <td>17.00 - 20.00</td>
-            <td colspan="7">Tersedia</td>
-          </tr>
-          <tr>
-            <td>20.00 - 23.00</td>
-            <td colspan="7">Tersedia</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <section id="jadwal" class="section light-background" style="padding: 60px 0; text-align: center;">
 
-    <!-- ===== TESTIMONIAL SECTION ===== -->
-    <section id="testimonial" class="testimonial">
-      <h2>Testimoni Pengunjung</h2>
-      <div class="testimonial-carousel">
-        <div class="testimonial-item">
-          <img src="https://via.placeholder.com/80" alt="User 1" />
-          <p>"Tempatnya bersih dan nyaman, recommended banget!"</p>
-          <h4>- Pengguna 1</h4>
-        </div>
-        <div class="testimonial-item">
-          <img src="https://via.placeholder.com/80" alt="User 2" />
-          <p>"Fasilitas lengkap dan pencahayaan sangat bagus."</p>
-          <h4>- Pengguna 2</h4>
-        </div>
-        <div class="testimonial-item">
-          <img src="https://via.placeholder.com/80" alt="User 3" />
-          <p>"Pelayanan ramah dan suasana bermain menyenangkan!"</p>
-          <h4>- Pengguna 3</h4>
-        </div>
-      </div>
-    </section>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Jadwal</h2>
+        <p><span>Cek</span> <span class="description-title">Jadwal Operasional</span></p>
+      </div><!-- End Section Title -->
 
-    <!-- ===== FAQ SECTION ===== -->
-    <section id="faq" class="faq">
-      <h2>Pertanyaan yang Sering Diajukan</h2>
-      <div class="faq-item">
-        <h3>Apakah bisa membawa raket sendiri?</h3>
-        <p>Ya, pengunjung boleh membawa raket dan shuttlecock sendiri.</p>
+      <div style="
+        margin-top: 15px;
+        overflow-x: auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        display: inline-block;
+        background: #fff;
+      ">
+        <table style="border-collapse: collapse; min-width: 800px; text-align: center;">
+          <thead style="background: #e00000; color: #fff;">
+            <tr>
+              <th style="padding: 15px 25px;">Jam</th>
+              <th style="padding: 15px 25px;">Senin</th>
+              <th style="padding: 15px 25px;">Selasa</th>
+              <th style="padding: 15px 25px;">Rabu</th>
+              <th style="padding: 15px 25px;">Kamis</th>
+              <th style="padding: 15px 25px;">Jumat</th>
+              <th style="padding: 15px 25px;">Sabtu</th>
+              <th style="padding: 15px 25px;">Minggu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 15px 25px; font-weight: 600;">08.00 - 11.00</td>
+              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
+            </tr>
+            <tr style="background: #fafafa;">
+              <td style="padding: 15px 25px; font-weight: 600;">11.00 - 14.00</td>
+              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px 25px; font-weight: 600;">14.00 - 17.00</td>
+              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
+            </tr>
+            <tr style="background: #fafafa;">
+              <td style="padding: 15px 25px; font-weight: 600;">17.00 - 20.00</td>
+              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px 25px; font-weight: 600;">20.00 - 23.00</td>
+              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="faq-item">
-        <h3>Apakah tersedia tempat parkir?</h3>
-        <p>Tersedia area parkir luas untuk motor dan mobil.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Bagaimana cara reservasi?</h3>
-        <p>Silakan hubungi kami melalui WhatsApp atau form kontak di bawah.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact">
-      <h2>Hubungi Kami</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <p>
-            <strong>Alamat:</strong> Jl. Rejang Raya Gg Barokah, Bukit Pinang,
-            Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75131
-          </p>
-          <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
-          <p><strong>Email:</strong> info@nts-arena.com</p>
-          <p><strong>Instagram:</strong> @nts_arena</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.123456789!2d117.123456!3d-0.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBukit%20Pinang!5e0!3m2!1sid!2sid!4v0000000000000"
-            width="100%"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          >
-          </iframe>
+    <!-- Testimonial Section -->
+    <section id="testimoni" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>TESTIMONI</h2>
+        <p>Yang mereka <span class="description-title">Katakan Tentang Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Tempatnya bersih dan nyaman, recommended banget!</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Pengguna 1</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Fasilitas lengkap dan pencahayaan sangat bagus.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Pengguna 2</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Pelayanan ramah dan suasana bermain menyenangkan!</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Pengguna 3</h3>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Nama" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Pesan" rows="4" required></textarea>
-          <button type="submit" class="btn">Kirim Pesan</button>
-        </form>
-      </div>
-    </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-      <p>© 2025 @nt's Arena | All Rights Reserved</p>
-    </footer>
-  </body>
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>FAQ</h2>
+        <p><span>Yang</span> <span class="description-title">Sering Ditanyakan<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="pertanyaan">
+              <div class="pertanyaan-img">
+                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="jawaban">
+                <h4>Apakah bisa membawa raket sendiri?</h4>
+                <p>Ya, pengunjung boleh membawa raket dan shuttlecock sendiri.</p>
+              </div>
+            </div>
+          </div><!-- End Pertanyaan 1-->
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="pertanyaan">
+              <div class="pertanyaan-img">
+                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="jawaban">
+                <h4>Apakah tersedia tempat parkir?</h4>
+                <p>Tersedia area parkir luas untuk motor dan mobil.</p>
+              </div>
+            </div>
+          </div><!-- End Pertanyaan 2-->
+
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="pertanyaan">
+              <div class="pertanyaan-img">
+                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="jawaban">
+                <h4>Bagaimana cara reservasi?</h4>
+                <p>Silakan isi form reservasi di bawah</p>
+              </div>
+            </div>
+          </div><!-- End Pertanyaan 3-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /FAQ Section -->
+
+    <!-- Reservasi Section -->
+    <section id="reservasi" class="book-a-table section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reservasi</h2>
+        <p><span class="description-title">Booking cepat,</span> <span >main lebih seru!<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/reservasi.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Anda" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="nohp" id="nohp" placeholder="Nomor WA Anda" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="tanggal" class="form-control" id="tanggal" placeholder="Tanggal" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="time" class="form-control" name="waktu" id="waktu" placeholder="Waktu" required="">
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan"></textarea>
+              </div>
+
+              <div class="text-center mt-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Permintaan booking anda sudah terkirim. Kami akan hubungi anda melalui WA dan Email untuk mengonfirmasi reservasi. Terima Kasih!</div>
+
+                <button type="submit">Reservasi</button>
+              </div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Book A Table Section -->
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontak</h2>
+        <p><span>Butuh Bantuan?</span> <span class="description-title">Hubungi Kami</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-5">
+          <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.123456789!2d117.123456!3d-0.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBukit%20Pinang!5e0!3m2!1sid!2sid!4v0000000000000" frameborder="0" allowfullscreen=""></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Alamat</h3>
+                <p>
+                  Jl. Rejang Raya Gg Barokah, Bukit Pinang,
+                  Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75131
+                </p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>WhatsApp</h3>
+                <p>+62 812-3456-7890</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@nts-arena.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Instagram</h3>
+                <p>@nts_arena</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/kontak.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="nama" class="form-control" placeholder="Nama Anda" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Email Anda" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="pesan" rows="6" placeholder="Pesan" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Pesan anda berhasil terkirim. Terima Kasih!</div>
+
+              <button type="submit">Kirim Pesan</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- footer -->
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Alamat</h4>
+            <p>Jl. Rejang Raya Gg Barokah, Bukit Pinang, Kec. Samarinda Ulu</p>
+            <p>Kota Samarinda, Kalimantan Timur 75131</p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Kontak</h4>
+            <p>
+              <strong>WhatsApp:</strong> <span>+62 812-3456-7890</span><br>
+              <strong>Email:</strong> <span>info@nts-arena.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Jam Operasional</h4>
+            <p>
+              <strong>Senin-Minggu:</strong> <span>8 Pagi - 11 Malam</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Kami</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2025</span> <strong class="px-1 sitename">@nt's Arena</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

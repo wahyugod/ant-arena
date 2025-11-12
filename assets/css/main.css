@@ -1,4 +1,16 @@
+/**
+* Template Name: Yummy
+* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Amatic SC",  sans-serif;
@@ -212,8 +224,8 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 0 0;
-  transition: all 0 s;
+  padding: 20px 0;
+  transition: all 0.5s;
   z-index: 997;
 }
 
@@ -222,12 +234,12 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
-  margin-right: 5px;
+  max-height: 36px;
+  margin-right: 8px;
 }
 
 .header .logo h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -299,7 +311,7 @@ h6 {
 
   .navmenu>ul>li {
     white-space: nowrap;
-    padding: 12px 12px;
+    padding: 15px 14px;
   }
 
   .navmenu>ul>li:last-child {
@@ -309,7 +321,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 500;
@@ -367,7 +379,7 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(12, 12, 12, 0.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
 
   .navmenu .dropdown ul li {
@@ -538,19 +550,15 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Footer style
+# Global Footer
 --------------------------------------------------------------*/
-
 .footer {
-  width: 100%;               /* Membuat footer selebar layar */
-  background-color: var(--background-color);
+  --heading-font: var(--default-font);
   color: var(--default-color);
+  background-color: var(--background-color);
   font-size: 14px;
-  padding: 30px;
-  position: relative;        
-  bottom: 0;
-  left: 0;
-  margin-top: 50px;
+  padding: 40px 0;
+  position: relative;
 }
 
 .footer .icon {
@@ -567,7 +575,7 @@ h6 {
 }
 
 .footer .address p {
-  margin-bottom: px;
+  margin-bottom: 0px;
 }
 
 .footer .social-links a {
@@ -599,8 +607,8 @@ h6 {
 }
 
 .footer .credits {
-  margin-top: 15px;
-  font-size: 10px;
+  margin-top: 5px;
+  font-size: 13px;
 }
 
 /*--------------------------------------------------------------
@@ -792,7 +800,7 @@ section,
   width: 100%;
   min-height: 100vh; /* biar full satu layar */
   position: relative;
-  padding: 100px 0;
+  padding: 60px 0;
   display: flex;
   align-items: center;
   background-size: cover; /* gambar nutup seluruh area */
@@ -800,9 +808,7 @@ section,
   background-repeat: no-repeat;
   background-attachment: fixed; /* efek parallax (bisa dihapus kalau berat) */
   color: #fff; /* teks putih biar kontras */
-  padding-top: 100px;
 }
-
 
 .hero::before {
   content: "";
@@ -819,7 +825,7 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 84px;
+  font-size: 64px;
   font-weight: 700;
   color: #fff; /* teks putih */
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* bayangan biar tetap terbaca di gambar terang */
@@ -1353,89 +1359,64 @@ section,
 /*--------------------------------------------------------------
 # Chefs Section
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# FAQ Section - Disesuaikan untuk Akordion
---------------------------------------------------------------*/
-
-/* Section Title - Tidak ada perubahan besar, hanya p menyesuaikan */
-.section-title p {
-    color: var(--heading-color);
-    margin: 10px 0 0 0;
-    font-size: 38px; /* Sedikit dikecilkan agar judul tidak terlalu besar */
-    font-weight: 500;
-    font-family: var(--heading-font);
+.faq .pertanyaan {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.section-title p .description-title {
-    color: var(--default-color); /* Ubah ke default-color agar tidak merah */
+.faq .pertanyaan .pertanyaan-img {
+  position: relative;
+  overflow: hidden;
 }
 
-
-/* Styling untuk item akordion */
-.faq .accordion-item {
-    border: none; /* Hapus border default Bootstrap */
-    margin-bottom: 15px; /* Spasi antar item akordion */
-    background-color: var(--surface-color); /* Gunakan surface-color Anda */
-    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.08); /* Tambahkan shadow ringan */
-    border-radius: 8px; /* Sudut sedikit membulat */
-    overflow: hidden; /* Penting untuk border-radius */
+.faq .pertanyaan .pertanyaan-img:after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  height: 100%;
+  background-color: var(--surface-color);
+  -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
+  mask: url("../img/team-shape.svg") no-repeat center bottom;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  z-index: 1;
 }
 
-.faq .accordion-header {
-    border-bottom: none; /* Hapus border bawah header akordion */
+.faq .pertanyaan .jawaban {
+  padding: 10px 15px 20px 15px;
 }
 
-.faq .accordion-button {
-    background-color: var(--surface-color); /* Latar belakang tombol */
-    color: var(--heading-color); /* Warna teks pertanyaan */
-    font-size: 18px; /* Ukuran font pertanyaan */
-    font-weight: 500;
-    padding: 20px 25px; /* Padding di dalam tombol */
-    border: none;
-    text-align: left;
-    transition: all 0.3s ease;
-    box-shadow: none !important; /* Hapus shadow fokus default Bootstrap */
+.faq .pertanyaan .jawaban h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: var(--default-font);
 }
 
-.faq .accordion-button:not(.collapsed) {
-    color: var(--accent-color); /* Warna teks pertanyaan saat terbuka */
-    background-color: var(--surface-color);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Border tipis saat terbuka */
+.faq .pertanyaan .jawaban span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.faq .accordion-button:hover {
-    color: var(--accent-color); /* Warna hover */
+.faq .pertanyaan .jawaban p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-/* Icon Q: */
-.faq .accordion-button .faq-icon {
-    font-weight: 700;
-    margin-right: 10px;
-    color: var(--accent-color); /* Warna 'Q:' merah */
-}
-
-/* Icon panah Bootstrap */
-.faq .accordion-button:after {
-    color: var(--default-color); /* Warna panah */
-    font-size: 1.2rem;
-    transition: transform 0.2s ease-in-out;
-}
-
-.faq .accordion-button:not(.collapsed):after {
-    transform: rotate(-180deg);
-    color: var(--accent-color); /* Warna panah saat terbuka */
-}
-
-.faq .accordion-body {
-    padding: 20px 25px; /* Padding untuk jawaban */
-    font-size: 16px;
-    color: var(--default-color); /* Warna teks jawaban */
-    background-color: var(--surface-color);
-}
-
-/* Sesuaikan Section Title agar tidak terlalu "berat" dengan "Yang Sering Ditanyakan" */
-.section-title p span:first-child {
-  color: var(--heading-color); /* Ubah "Yang" ke warna heading default */
+.faq .pertanyaan:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------

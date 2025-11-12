@@ -248,36 +248,13 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3>Pencahayaan LED</h3>
-              <p class="description">
-                Pencahayaan terang dan merata untuk permainan maksimal.
-              </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>Kantin</h3>
-              <p class="description">
-                Menyediakan makanan dan minuman ringan untuk pemain dan penonton.
-              </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
-              <h3>Mushola</h3>
-              <p class="description">
-                Tersedia tempat ibadah yang bersih dan nyaman.
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
-              <h3>AC (Menyusul)</h3>
-              <p class="description">
-                Fasilitas pendingin udara segera hadir untuk kenyamanan lebih.
-              </p>
-            </div><!-- End Event item -->
-
+          <div class="swiper-wrapper" id="fasilitasWrapper">
+              <div class="swiper-slide event-item d-flex flex-column justify-content-end">
+                  <h3>Memuat fasilitas...</h3>
+              </div>
           </div>
+
           <div class="swiper-pagination"></div>
         </div>
 
@@ -327,16 +304,11 @@
               }
             }
           </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-          </div>
+        <div class="swiper-wrapper align-items-center" id="galeriWrapper">
+            <div class="swiper-slide">
+                <p>Memuat galeri...</p>
+            </div>
+        </div>
           <div class="swiper-pagination"></div>
         </div>
 
@@ -426,7 +398,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="table-responsive">
-          <table class="jadwal-table">
+          <table class="jadwal-table" id="jadwalTable">
             <thead>
               <tr>
                 <th>JAM</th>
@@ -439,56 +411,9 @@
                 <th>MINGGU</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="jadwalBody">
               <tr>
-                <td class="time-slot">08.00 - 11.00</td>
-                <td>Tim Garuda</td>
-                <td>Tersedia</td>
-                <td>Tersedia</td>
-                <td>Tersedia</td>
-                <td>Tersedia</td>
-                <td>Tersedia</td>
-                <td>Tersedia</td>
-              </tr>
-              <tr>
-                <td class="time-slot">11.00 - 14.00</td>
-                <td>ambatukam</td>
-                <td>Tim Merah</td>
-                <td>Tersedia</td>
-                <td>Raja Smash</td>
-                <td>Putri Lintas</td>
-                <td>Angin Lintas</td>
-                <td>Samudra Shuttle</td>
-              </tr>
-              <tr>
-                <td class="time-slot">14.00 - 17.00</td>
-                <td>ambatusport</td>
-                <td>Kiddo Shuttle</td>
-                <td>Tersedia</td>
-                <td>Guntur Badminton</td>
-                <td>Laskar Net</td>
-                <td>Pelita Smash</td>
-                <td>Arjuna Shuttle</td>
-              </tr>
-              <tr>
-                <td class="time-slot">17.00 - 20.00</td>
-                <td>Tersedia</td>
-                <td>PB ASAL MAIN</td>
-                <td>Kinara Shuttle</td>
-                <td>Victory Smash</td>
-                <td>Elang Shuttle</td>
-                <td>Tersedia</td>
-                <td>Senja Raket</td>
-              </tr>
-              <tr>
-                <td class="time-slot">20.00 - 23.00</td>
-                <td>Tersedia</td>
-                <td>Jagad Shuttle</td>
-                <td>Mahkota Net</td>
-                <td>Tersedia</td>
-                <td>Satya Shuttle</td>
-                <td>Pelopor Smash</td>
-                <td>Permata Raket</td>
+                <td colspan="8" class="text-center">Memuat jadwal...</td>
               </tr>
             </tbody>
           </table>
@@ -512,7 +437,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper" id="testimoniSwiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -528,7 +453,7 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id="testimoniWrapper">
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -537,63 +462,14 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Tempatnya bersih dan nyaman, recommended banget!</span>
+                        <span>Memuat testimoni...</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Pengguna 1</h3>
+                      <h3>-</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fasilitas lengkap dan pencahayaan sangat bagus.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Pengguna 2</h3>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpeg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Pelayanan ramah dan suasana bermain menyenangkan!</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Pengguna 3</h3>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.png" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -702,33 +578,52 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/reservasi.php" method="post" role="form" class="php-email-form">
+            <form id="reservasiForm" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Anda" required="">
+                  <input type="text" name="nama_tim" class="form-control" id="nama_tim" placeholder="Nama Tim" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="nohp" id="nohp" placeholder="Nomor WA Anda" required="">
+                  <input type="text" class="form-control" name="no_telepon" id="no_telepon" placeholder="Nomor WA Anda" required="">
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="date" name="tanggal" class="form-control" id="tanggal" placeholder="Tanggal" required="">
+                  <select class="form-select" name="hari" id="hari" required="">
+                    <option value="">Pilih Hari</option>
+                    <option value="senin">Senin</option>
+                    <option value="selasa">Selasa</option>
+                    <option value="rabu">Rabu</option>
+                    <option value="kamis">Kamis</option>
+                    <option value="jumat">Jumat</option>
+                    <option value="sabtu">Sabtu</option>
+                    <option value="minggu">Minggu</option>
+                  </select>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="time" class="form-control" name="waktu" id="waktu" placeholder="Waktu" required="">
+                  <select class="form-select" name="jam" id="jam" required="">
+                    <option value="">Pilih Jam</option>
+                    <option value="08:00-09:00">08:00 - 11:00</option>
+                    <option value="09:00-10:00">11:00 - 14:00</option>
+                    <option value="10:00-11:00">14:00 - 17:00</option>
+                    <option value="11:00-12:00">17:00 - 20:00</option>
+                    <option value="12:00-13:00">20:00 - 23:00</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="tanggal_mulai" class="form-control" id="tanggal_mulai" placeholder="Tanggal" required="">
                 </div>
               </div>
 
               <div class="form-group mt-3">
-                <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan"></textarea>
+                <textarea class="form-control" name="pesan" id="pesan" rows="5" placeholder="Catatan/Pesan (opsional)"></textarea>
               </div>
 
               <div class="text-center mt-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Permintaan booking anda sudah terkirim. Kami akan hubungi anda melalui WA dan Email untuk mengonfirmasi reservasi. Terima Kasih!</div>
+                <div class="loading" style="display:none;">Loading</div>
+                <div class="error-message" style="display:none;"></div>
+                <div class="sent-message" style="display:none;">Permintaan booking anda sudah terkirim. Kami akan hubungi anda melalui WA dan Email untuk mengonfirmasi reservasi. Terima Kasih!</div>
 
                 <button type="submit">Reservasi</button>
               </div>
@@ -884,6 +779,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Backend Integration -->
+  <script src="assets/js/backend-integration.js"></script>
 
 </body>
 

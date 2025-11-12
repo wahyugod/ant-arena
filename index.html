@@ -345,7 +345,7 @@
     </section><!-- /Gallery Section -->
 
     <!-- Harga Section -->
-    <section id="harga" class="menu section">
+    <section id="harga" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -354,90 +354,69 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="row gy-4 justify-content-center">
 
-        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Sewa Per Jam</h4>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Sewa Bulanan</h4>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- SEWA PER JAM -->
-          <div class="tab-pane fade active show" id="menu-starters">
-            <div class="row gy-5 justify-content-center">
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/lapangan1.jpg" class="glightbox">
-                  <img src="assets/img/menu/lapangan1.jpg" class="menu-img img-fluid" alt="">
-                </a>
-                <h4>Sewa Lapangan Per Jam</h4>
-                <p class="ingredients">
-                  Minimal Sewa 3 Jam
-                </p>
-                <p class="price">
-                  Rp 50.000 / jam
-                </p>
+          <!-- FREE/BASIC PLAN -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card pricing-free">
+              <div class="pricing-header">
+                <h3 class="pricing-title">SEWA PER JAM</h3>
+                <p class="pricing-subtitle">Cocok untuk main santai atau trial</p>
               </div>
-
+              <div class="pricing-price">
+                <h2>Rp 50.000</h2>
+                <span class="pricing-period">/Per Jam</span>
+              </div>
+              <div class="pricing-features">
+                <h4>Yang Termasuk:</h4>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Akses Lapangan</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pencahayaan LED</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Minimal Sewa 3 Jam</li>
+                  <li class="disabled"><i class="bi bi-x-circle"></i> Diskon Member</li>
+                  <li class="disabled"><i class="bi bi-x-circle"></i> Prioritas Booking</li>
+                </ul>
+              </div>
+              <div class="pricing-action">
+                <a href="#reservasi" class="btn-pricing btn-pricing-free">Pilih Paket</a>
+              </div>
             </div>
           </div>
 
-          <!-- SEWA BULANAN -->
-          <div class="tab-pane fade" id="menu-breakfast">
-            <div class="row gy-5 justify-content-center">
-
-              <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/lapangan2.jpg" class="glightbox">
-                  <img src="assets/img/menu/lapangan2.jpg" class="menu-img img-fluid" alt="">
-                </a>
-                <h4>Paket Sewa Bulanan</h4>
-                <p class="ingredients">
-                  4x main per bulan (3 jam/sesi)
-                </p>
-                <p class="price">
-                  Rp 350.000 / bulan
-                </p>
+          <!-- ENTERPRISE/PREMIUM PLAN -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card pricing-enterprise">
+              <div class="pricing-header">
+                <h3 class="pricing-title">SEWA BULANAN</h3>
+                <p class="pricing-subtitle">Hemat untuk pemain rutin</p>
               </div>
-
+              <div class="pricing-price">
+                <h2>Rp 350.000</h2>
+                <span class="pricing-period">/Per Bulan</span>
+              </div>
+              <div class="pricing-features">
+                <h4>Yang Termasuk:</h4>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Akses Lapangan</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pencahayaan LED</li>
+                  <li><i class="bi bi-check-circle-fill"></i> 4x Main (3 jam/sesi)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Diskon Member 15%</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Prioritas Booking</li>
+                </ul>
+              </div>
+              <div class="pricing-action">
+                <a href="#reservasi" class="btn-pricing btn-pricing-enterprise">Pilih Paket</a>
+              </div>
             </div>
           </div>
+
         </div>
 
-        <!-- Tombol Reservasi -->
-        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="#reservasi" 
-            style="
-              display: inline-block;
-              color: #fff;
-              background: #e00000;
-              padding: 12px 40px;
-              border-radius: 50px;
-              font-weight: 600;
-              text-decoration: none;
-              transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
-              box-shadow: 0 4px 15px rgba(224, 0, 0, 0.3);
-            "
-            onmouseover="this.style.background='#c40000'; this.style.transform='scale(1.05)'"
-            onmouseout="this.style.background='#e00000'; this.style.transform='scale(1)'">
-            Reservasi Sekarang
-          </a>
-        </div>
       </div>
     </section>
 
     <!-- ===== JADWAL SECTION ===== -->
-    <section id="jadwal" class="section light-background" style="padding: 60px 0; text-align: center;">
+    <section id="jadwal" class="jadwal-section section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -445,53 +424,82 @@
         <p><span>Cek</span> <span class="description-title">Jadwal Operasional</span></p>
       </div><!-- End Section Title -->
 
-      <div style="
-        margin-top: 15px;
-        overflow-x: auto;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        display: inline-block;
-        background: #fff;
-      ">
-        <table style="border-collapse: collapse; min-width: 800px; text-align: center;">
-          <thead style="background: #e00000; color: #fff;">
-            <tr>
-              <th style="padding: 15px 25px;">Jam</th>
-              <th style="padding: 15px 25px;">Senin</th>
-              <th style="padding: 15px 25px;">Selasa</th>
-              <th style="padding: 15px 25px;">Rabu</th>
-              <th style="padding: 15px 25px;">Kamis</th>
-              <th style="padding: 15px 25px;">Jumat</th>
-              <th style="padding: 15px 25px;">Sabtu</th>
-              <th style="padding: 15px 25px;">Minggu</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding: 15px 25px; font-weight: 600;">08.00 - 11.00</td>
-              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
-            </tr>
-            <tr style="background: #fafafa;">
-              <td style="padding: 15px 25px; font-weight: 600;">11.00 - 14.00</td>
-              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
-            </tr>
-            <tr>
-              <td style="padding: 15px 25px; font-weight: 600;">14.00 - 17.00</td>
-              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
-            </tr>
-            <tr style="background: #fafafa;">
-              <td style="padding: 15px 25px; font-weight: 600;">17.00 - 20.00</td>
-              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
-            </tr>
-            <tr>
-              <td style="padding: 15px 25px; font-weight: 600;">20.00 - 23.00</td>
-              <td colspan="7" style="padding: 15px 25px;">Tersedia</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="table-responsive">
+          <table class="jadwal-table">
+            <thead>
+              <tr>
+                <th>JAM</th>
+                <th>SENIN</th>
+                <th>SELASA</th>
+                <th>RABU</th>
+                <th>KAMIS</th>
+                <th>JUMAT</th>
+                <th>SABTU</th>
+                <th>MINGGU</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-slot">08.00 - 11.00</td>
+                <td>Tim Garuda</td>
+                <td>Tersedia</td>
+                <td>Tersedia</td>
+                <td>Tersedia</td>
+                <td>Tersedia</td>
+                <td>Tersedia</td>
+                <td>Tersedia</td>
+              </tr>
+              <tr>
+                <td class="time-slot">11.00 - 14.00</td>
+                <td>ambatukam</td>
+                <td>Tim Merah</td>
+                <td>Tersedia</td>
+                <td>Raja Smash</td>
+                <td>Putri Lintas</td>
+                <td>Angin Lintas</td>
+                <td>Samudra Shuttle</td>
+              </tr>
+              <tr>
+                <td class="time-slot">14.00 - 17.00</td>
+                <td>ambatusport</td>
+                <td>Kiddo Shuttle</td>
+                <td>Tersedia</td>
+                <td>Guntur Badminton</td>
+                <td>Laskar Net</td>
+                <td>Pelita Smash</td>
+                <td>Arjuna Shuttle</td>
+              </tr>
+              <tr>
+                <td class="time-slot">17.00 - 20.00</td>
+                <td>Tersedia</td>
+                <td>PB ASAL MAIN</td>
+                <td>Kinara Shuttle</td>
+                <td>Victory Smash</td>
+                <td>Elang Shuttle</td>
+                <td>Tersedia</td>
+                <td>Senja Raket</td>
+              </tr>
+              <tr>
+                <td class="time-slot">20.00 - 23.00</td>
+                <td>Tersedia</td>
+                <td>Jagad Shuttle</td>
+                <td>Mahkota Net</td>
+                <td>Tersedia</td>
+                <td>Satya Shuttle</td>
+                <td>Pelopor Smash</td>
+                <td>Permata Raket</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="jadwal-info" data-aos="fade-up" data-aos-delay="200">
+          <p><i class="bi bi-info-circle"></i> Data diperbarui secara real-time oleh admin</p>
+        </div>
       </div>
-    </div>
-  </section>
+
+    </section>
 
     <!-- Testimonial Section -->
     <section id="testimoni" class="testimonials section">
@@ -600,7 +608,7 @@
     </section><!-- /Testimonials Section -->
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq section light-background">
+    <section id="faq" class="faq-accordion section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -608,45 +616,69 @@
         <p><span>Yang</span> <span class="description-title">Sering Ditanyakan<br></span></p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="faq-container">
 
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Apakah bisa membawa raket sendiri?</h4>
-                <p>Ya, pengunjung boleh membawa raket dan shuttlecock sendiri.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah bisa membawa raket sendiri?</h3>
+              <button class="faq-toggle" type="button">
+                <i class="bi bi-plus-lg"></i>
+              </button>
             </div>
-          </div><!-- End Pertanyaan 1-->
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Apakah tersedia tempat parkir?</h4>
-                <p>Tersedia area parkir luas untuk motor dan mobil.</p>
-              </div>
+            <div class="faq-answer">
+              <p>Ya, pengunjung boleh membawa raket dan shuttlecock sendiri. Kami menyediakan lapangan dengan fasilitas lengkap untuk kenyamanan bermain Anda.</p>
             </div>
-          </div><!-- End Pertanyaan 2-->
+          </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="pertanyaan">
-              <div class="pertanyaan-img">
-                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="jawaban">
-                <h4>Bagaimana cara reservasi?</h4>
-                <p>Silakan isi form reservasi di bawah</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah tersedia tempat parkir?</h3>
+              <button class="faq-toggle" type="button">
+                <i class="bi bi-plus-lg"></i>
+              </button>
             </div>
-          </div><!-- End Pertanyaan 3-->
+            <div class="faq-answer">
+              <p>Tersedia area parkir luas untuk motor dan mobil. Parkir gratis untuk semua pengunjung yang menyewa lapangan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Bagaimana cara reservasi?</h3>
+              <button class="faq-toggle" type="button">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Silakan isi form reservasi di bawah atau hubungi kami melalui WhatsApp. Kami akan konfirmasi jadwal Anda dalam waktu 1x24 jam.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Berapa minimal sewa lapangan?</h3>
+              <button class="faq-toggle" type="button">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Minimal sewa adalah 3 jam untuk paket per jam. Untuk paket bulanan, Anda mendapatkan 4 sesi bermain (3 jam per sesi) dalam sebulan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah ada diskon untuk member?</h3>
+              <button class="faq-toggle" type="button">
+                <i class="bi bi-plus-lg"></i>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Ya, member bulanan mendapatkan diskon 15% untuk sewa tambahan dan gratis shuttlecock setiap sesi bermain.</p>
+            </div>
+          </div>
 
         </div>
 
@@ -733,7 +765,7 @@
                 <h3>Alamat</h3>
                 <p>
                   Jl. Rejang Raya Gg Barokah, Bukit Pinang,
-                  Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75131
+                  Kec. Samarinda Ulu
                 </p>
               </div>
             </div>

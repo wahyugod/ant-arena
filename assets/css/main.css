@@ -1225,6 +1225,10 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials.section {
+  padding: 200px;
+}
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1288,7 +1292,7 @@ section,
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 30px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -1570,7 +1574,7 @@ section,
   display: flex;
   align-items: center;
   height: 100%;
-  min-height: 140px; /* biar semua kotak sama tinggi */
+  min-height: 130px; /* biar semua kotak sama tinggi */
   transition: all 0.3s ease-in-out;
 }
 
@@ -1673,3 +1677,547 @@ section,
 }
 
 /* Starter section removed (no custom rules) to avoid empty ruleset lint warnings */
+
+/*--------------------------------------------------------------
+# FAQ Accordion Section - Modern Expandable Design
+--------------------------------------------------------------*/
+.faq-accordion.section {
+  padding: 100px 0;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #fafafa;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: var(--default-font);
+  flex: 1;
+  padding-right: 20px;
+  line-height: 1.4;
+}
+
+.faq-toggle {
+  background: #f5f5f5;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-toggle i {
+  font-size: 16px;
+  color: #666;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background: #e8e8e8;
+}
+
+.faq-item.active .faq-toggle {
+  background: var(--accent-color);
+  transform: rotate(0deg);
+}
+
+.faq-item.active .faq-toggle i {
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 28px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 0 28px 24px 28px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 20px;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+
+  .faq-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .faq-toggle i {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    padding: 0 20px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Pricing Section - Modern Card-Based Design
+--------------------------------------------------------------*/
+.pricing.section {
+  padding: 60px 0px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e0e0e0 0%, #f0f0f0 100%);
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Free/Basic Plan Styling */
+.pricing-free {
+  border: 2px solid #e8e8e8;
+}
+
+.pricing-free::before {
+  background: linear-gradient(90deg, #6c757d 0%, #495057 100%);
+}
+
+.pricing-free:hover {
+  border-color: #d0d0d0;
+}
+
+/* Enterprise/Premium Plan Styling */
+.pricing-enterprise {
+  border: 2px solid #e3f2fd;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.pricing-enterprise::before {
+  background: linear-gradient(90deg, #ce1212 0%, #b71111 100%);
+}
+
+.pricing-enterprise:hover {
+  border-color: #f9b5b5;
+  box-shadow: 0 4px 15px rgba(237, 118, 118, 0.3);
+}
+
+/* Pricing Header */
+.pricing-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pricing-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: var(--default-font);
+}
+
+.pricing-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+/* Pricing Price */
+.pricing-price {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing-price h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1;
+  font-family: var(--default-font);
+}
+
+.pricing-enterprise .pricing-price h2 {
+  color: #ce1212;
+}
+
+.pricing-period {
+  display: block;
+  font-size: 14px;
+  color: #888;
+  margin-top: 8px;
+}
+
+/* Pricing Features */
+.pricing-features {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.pricing-features h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: var(--default-font);
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features ul li {
+  padding: 5px 0;
+  font-size: 15px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pricing-features ul li i {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.pricing-features ul li i.bi-check-circle-fill {
+  color: #28a745;
+}
+
+.pricing-features ul li.disabled {
+  color: #bbb;
+}
+
+.pricing-features ul li.disabled i.bi-x-circle {
+  color: #ddd;
+}
+
+/* Pricing Action Buttons */
+.pricing-action {
+  text-align: center;
+}
+
+.btn-pricing {
+  display: block;
+  width: 100%;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  text-align: center;
+}
+
+.btn-pricing-free {
+  background: #ffffff;
+  color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+.btn-pricing-free:hover {
+  background: #2c3e50;
+  color: #ffffff;
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px rgba(44, 62, 80, 0.3);
+}
+
+.btn-pricing-enterprise {
+  background: #ce1212;
+  color: #ffffff;
+  border-color: #ce1212;
+  box-shadow: 0 4px 15px rgba(206, 18, 18, 0.3);
+}
+
+.btn-pricing-enterprise:hover {
+  background: #ce1212;
+  border-color: #ce1212;
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(206, 18, 18, 0.4);
+  color: #ffffff;
+}
+
+/* Additional Info Note */
+.pricing-note {
+  background: #fff9e6;
+  border-left: 4px solid #ffc107;
+  padding: 20px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-note i {
+  color: #ffc107;
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.pricing-note p {
+  display: inline;
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .pricing-card {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-price h2 {
+    font-size: 40px;
+  }
+
+  .pricing-card {
+    padding: 30px 20px;
+  }
+
+  .btn-pricing {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Jadwal Section - Schedule Table Styling
+--------------------------------------------------------------*/
+.jadwal-section {
+  padding: 80px 0;
+}
+
+.jadwal-section .container {
+  max-width: 1200px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+.jadwal-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+  font-size: 14px;
+}
+
+.jadwal-table thead {
+  background: linear-gradient(135deg, #ce1212 0%, #c20f0f 100%);
+}
+
+.jadwal-table thead th {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 16px 12px;
+  text-align: center;
+  border: none;
+  font-family: var(--default-font);
+}
+
+.jadwal-table thead th:first-child {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.jadwal-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.jadwal-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.jadwal-table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.jadwal-table tbody tr:hover {
+  background: #e8f4f8;
+}
+
+.jadwal-table tbody td {
+  padding: 29px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+  color: #495057;
+  font-size: 15px;
+}
+
+.jadwal-table tbody td.time-slot {
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  padding-left: 20px;
+  background: #f1f3f5;
+  border-right: 3px solid #ce1212;
+}
+
+.jadwal-table tbody tr:hover td.time-slot {
+  background: #e9ecef;
+}
+
+/* Info Footer */
+.jadwal-info {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.jadwal-info p {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff9e6;
+  border-left: 4px solid #ffc107;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.jadwal-info i {
+  color: #ffc107;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .jadwal-table {
+    font-size: 13px;
+  }
+
+  .jadwal-table thead th,
+  .jadwal-table tbody td {
+    padding: 12px 8px;
+  }
+
+  .jadwal-table tbody td.time-slot {
+    padding-left: 12px;
+  }
+
+  .jadwal-table thead th:first-child {
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jadwal-section {
+    padding: 60px 0;
+  }
+
+  .jadwal-table {
+    font-size: 12px;
+  }
+
+  .jadwal-table thead th {
+    font-size: 11px;
+    padding: 12px 6px;
+  }
+
+  .jadwal-table tbody td {
+    padding: 10px 6px;
+  }
+
+  .jadwal-table tbody td.time-slot {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+
+  .jadwal-info p {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
